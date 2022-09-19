@@ -45,7 +45,18 @@
         /* box-sizing: content-box; */
         /* border: darkblue; */
 
-        background-color: honeydew;
+        background-color: rgb(8, 99, 8);
+        font-weight: bolder;
+        font-style: calc();
+        font-size: x-large;
+      }
+
+      .Section_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 18px;
       }
 
       #my_content {
@@ -53,16 +64,17 @@
         animation-name: my_content;
         animation-duration: 10s;
         width: 335px;
+        height: 784px;
         max-width: fit-content;
         max-height: fit-content;
         padding: 5px;
         border: double;
         border: 1px solid;
-        box-shadow: 5px 10px;
+        box-shadow: 10px 10px 8px 10px #888888;
         /* position: relative;
         top: 35px; */
-        position: fixed;
-        top: 162px;
+        /* position: fixed;
+        top: 162px; */
       }
 
       @keyframes my_content {
@@ -79,14 +91,15 @@
         max-width: fit-content;
         max-height: fit-content;
         padding: 5px;
+        height: 784px;
         border: double;
         border: 1px solid;
         /* position: relative;
         top: -789px;
         left: 1001px; */
-        position: fixed;
+        /* position: fixed;
         top: 161px;
-        left: 1017px;
+        left: 1017px; */
         background: rgb(34, 193, 195);
         background: linear-gradient(
           0deg,
@@ -103,12 +116,11 @@
         padding: 5px;
         /* border: double; */
         /* border: 1px solid; */
-        /* position: relative;
-        top: -1125px;
-        left: 352px; */
-        position: fixed;
+        position: relative;
+        top: -25px;
+        /* position: fixed;
         top: 136px;
-        left: 364px;
+        left: 364px; */
       }
 
       .paragraph {
@@ -182,9 +194,18 @@
         float: right;
         top: -30px;
       }
+      .headertab {
+        background: white;
+        text-align: center;
+      }
+      .headerlink {
+        text-decoration: none;
+        color: black;
+      }
     </style>
     <link rel="stylesheet" href="CSS/Headerstylesheet.css" />
     <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <link rel="stylesheet" href="CSS/FooterStylesheet.css" />
   </head>
 
   <body>
@@ -203,132 +224,193 @@
       </header>
       <div class="navigation_containers">
         <div class="headertab">
-          <a href="index.html">HOME PAGE</a>
+          <a class="headerlink" href="index.html">HOME PAGE</a>
         </div>
         <div class="headertab">
-          <a href="courses.html">ALL COURSES</a>
+          <a class="headerlink" href="courses.html">ALL COURSES</a>
         </div>
         <div class="headertab">
-          <a href="instuctor.html">INSTRUCTORS</a>
+          <a class="headerlink" href="instuctor.html">INSTRUCTORS</a>
         </div>
         <div class="headertab">
-          <a href="aboutme.html">ABOUT ME</a>
+          <a class="headerlink" href="aboutme.html">ABOUT ME</a>
         </div>
         <div class="headertab">
-          <a href="blogs.html">BLOGS</a>
+          <a class="headerlink" href="blogs.html">BLOGS</a>
         </div>
       </div>
     </header>
-    <section id="my_content">
-      <h1 style="text-align: center">ABOUT ME</h1>
-      <img src="image/demo.jpg" />
-      <!-- <a
-        href="image/demo.jpg"
-        download
-        style="position: absolute; bottom: 275px; left: 134px"
-        >image</a
-      > -->
+    <div class="Section_content">
+      <section id="my_content">
+        <h1 style="text-align: center">ABOUT ME</h1>
+        <img src="image/demo.jpg" />
+        <!-- <a
+          href="image/demo.jpg"
+          download
+          style="position: absolute; bottom: 275px; left: 134px"
+          >image</a
+        > -->
 
-      <p class="username">@Debayan7</p>
-      <div class="paragraph">
-        <p style="font-size: larger">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          ea voluptate blanditiis harum beatae necessitatibus quas impedit?Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Tenetur error
-          eligendi eaque vero perferendis aliquid deserunt officia odio?
-          Officiis fuga maxime voluptatum porro perferendis saepe vitae
-          molestias eos nihil incidunt?vero perferendis aliquid deserunt officia
-          odio? Officiis fuga maxime voluptatum porro perferendis saepe vitae
-          molestias eos nihil incidunt?vero perferendis aliquid deserunt officia
-          odio? Officiis fuga maxime voluptatum porro perferendis saepe vitae
-          molestias eos nihil incidunt?fuga maxime voluptatum porro perferendis
-          saepe vitae molestias eos nihil incidunt?vero perferendis aliquid
-          deserunt officia odio? Officiis fuga maxime voluptatum porro
-          perferendis saepe vitae molestias eos nihil incidunt?fuga maxime
-          voluptatum porro perferendis saepe vitae molestias eos nihil
-          incidunt?vero perferendis aliquid deserunt officia odio? Officiis fuga
-          maxime voluptatum porro perferendis saepe vitae molestias eos n
-          <a
-            class="on_click_course"
-            href="#"
-            style="color: #5390d9; font-weight: bolder; font-size: x-large"
-            >...</a
-          >
-        </p>
-      </div>
-    </section>
-
-    <section id="second_section">
-      <h1
-        style="
-          font-size: larger;
-          text-align: center;
-          text-decoration: underline dotted;
-          color: rgb(196, 0, 26);
-        "
-      >
-        SOME IMPORTANT LINKS
-      </h1>
-
-      <ul class="links">
-        <li class="link_class">
-          <a href="basic1.html">click on the link to go to the next page </a>
-        </li>
-        <li class="link_class">
-          <a href="videoaudio.html">click to access the video and audios</a>
-        </li>
-        <li class="link_class">
-          <a href="https://www.hoichoi.com/" title="go to google">Hoichoi</a>
-        </li>
-        <li class="link_class">
-          <a href="https://www.cricbuzz.com/" title="go to cricbuzz"
-            >cricbuzz</a
-          >
-        </li>
-        <li class="link_class">
-          <a href="https://www.amazon.com/" title="amazon">amazon</a>
-        </li>
-        <li class="link_class">
-          <a href="https://www.netflix.com/" title="netflix">netflix</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="third_section" style="height: max-height">
-      <h1 class="font" style="text-align: center; background: #5390d9">
-        WELCOME TO MY PAGE. WE ARE OFFERING THESE COURSES FOR YOU
-      </h1>
-      <div class="course_list">
-        <div class="courses">
-          <a class="on_click_course" href="https://google.com">JAVA</a>
-        </div>
-        <div class="courses">
-          <a class="on_click_course" href="#">HTML AND CSS</a>
-        </div>
-
-        <div class="courses">
-          <a class="on_click_course" href="#">PYTHON</a>
-        </div>
-
-        <div class="courses">
-          <a class="on_click_course" href="#">JAVA SCRIPT</a>
-        </div>
-
-        <div class="courses">
-          <a class="on_click_course" href="#">SQL</a>
-        </div>
-
-        <div class="courses">
-          <a class="on_click_course" href="#">MACHINE LEARNING</a>
-        </div>
-      </div>
-      <section class="More_course">
-        <div class="More_course">
-          <a class="on_click_course" href="#" style="color: black"
-            >view more courses ></a
-          >
+        <p class="username">@Debayan7</p>
+        <div class="paragraph">
+          <p style="font-size: larger">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis ea voluptate blanditiis harum beatae necessitatibus
+            quas impedit?Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Tenetur erriciis fuga maxime voluptatum porro perferendis
+            saepe vitae molestias eos nihil incidunt?vero perferendis aliquid
+            deserunt officia odio? Officiis fuga maxime voluptatum porro
+            perferendis saepe vitae molestias eos nihil incidunt?fuga maxime
+            voluptatum porro perferendis saepe vitae molestias eos nihil
+            incidunt?vero perferendis aliquid deserunt officia odio? Officiis
+            fuga maxime voluptatum porro perferendis saepe vitae molestias eos
+            nihil incidunt?fuga maxime voluptatum porro perferendis saepe vitae
+            molestias eos nihil incidunt?vero perferendis aliquid deserunt
+            officia odio? Officiis fuga maxime voluptatum porro perferendis
+            saepe vitae molestias eos n
+            <a
+              class="on_click_course"
+              href="#"
+              style="color: #5390d9; font-weight: bolder; font-size: x-large"
+              >...</a
+            >
+          </p>
         </div>
       </section>
-    </section>
+
+      <section id="third_section" style="height: max-height">
+        <h1 class="font" style="text-align: center; background: #5390d9">
+          WELCOME TO MY PAGE. WE ARE OFFERING THESE COURSES FOR YOU
+        </h1>
+        <div class="course_list">
+          <div class="courses">
+            <a class="on_click_course" href="https://google.com">JAVA</a>
+          </div>
+          <div class="courses">
+            <a class="on_click_course" href="#">HTML AND CSS</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">PYTHON</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">JAVA SCRIPT</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">SQL</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">MACHINE LEARNING</a>
+          </div>
+        </div>
+        <section class="More_course">
+          <div class="More_course">
+            <a class="on_click_course" href="#" style="color: black"
+              >view more courses ></a
+            >
+          </div>
+        </section>
+      </section>
+
+      <section id="second_section">
+        <h1
+          style="
+            font-size: larger;
+            text-align: center;
+            text-decoration: underline dotted;
+            color: rgb(196, 0, 26);
+          "
+        >
+          SOME IMPORTANT LINKS
+        </h1>
+
+        <ul class="links">
+          <li class="link_class">
+            <a href="basic1.html">click on the link to go to the next page </a>
+          </li>
+          <li class="link_class">
+            <a href="videoaudio.html">click to access the video and audios</a>
+          </li>
+          <li class="link_class">
+            <a href="https://www.hoichoi.com/" title="go to google">Hoichoi</a>
+          </li>
+          <li class="link_class">
+            <a href="https://www.cricbuzz.com/" title="go to cricbuzz"
+              >cricbuzz</a
+            >
+          </li>
+          <li class="link_class">
+            <a href="https://www.amazon.com/" title="amazon">amazon</a>
+          </li>
+          <li class="link_class">
+            <a href="https://www.netflix.com/" title="netflix">netflix</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
+  <!-- <footer>
+    <div class="footer_content">
+      <div class="footer_links" id="footer_link1">
+        <div class="content1" style="width: 120px;">
+          <h1 class="footercontentheader">ABOUT STUDY ERA</h1>
+          
+            <p class = footercontentbody id="footercontentbody1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              illum enim, incidunt debitis nobis, molestiae hic recusandae quae,
+              sed veniam corrupti iure quis eligendi. Corporis quam
+              necessitatibus sequi consectetur aspernatur.
+            </p>
+          
+        </div>
+
+        <div class="content1">
+          <h1 class="footercontentheader">SOME QUICK LINKS</h1>
+          <div class="footer_containers">
+            <div class="footerlink">
+              <a class="headerlink" href="index.html">HOME PAGE</a>
+            </div>
+            <div class="footerlink">
+              <a class="headerlink" href="courses.html">ALL COURSES</a>
+            </div>
+            <div class="footerlink">
+              <a class="headerlink" href="instuctor.html">INSTRUCTORS</a>
+            </div>
+            <div class="footerlink">
+              <a class="headerlink" href="aboutme.html">ABOUT ME</a>
+            </div>
+            <div class="footerlink">
+              <a class="headerlink" href="blogs.html">BLOGS</a>
+            </div>
+          </div>
+        </div>
+        <div class="content1">
+          <h1 class="footercontentheader">ABOUT STUDY ERA</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum
+            enim, incidunt debitis nobis, molestiae hic recusandae quae, sed
+            veniam corrupti iure quis eligendi. Corporis quam necessitatibus
+            sequi consectetur aspernatur.
+          </p>
+        </div>
+        <div class="content1">
+          <h1 class="footercontentheader">ABOUT STUDY ERA</h1>
+          <div style="width: 300px">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              illum enim, incidunt debitis nobis, molestiae hic recusandae quae,
+              sed veniam corrupti iure quis eligendi. Corporis quam
+              necessitatibus sequi consectetur aspernatur.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+        
+      <div class="footer_links">12</div>
+    </div>
+  </footer> -->
 </html>

@@ -1,0 +1,26 @@
+footer{
+    max-width: 100%;
+}
+.footer_content{
+    display: flex;
+    background: red;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+#footer_link1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 36px;
+}
+
+.footer_containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
