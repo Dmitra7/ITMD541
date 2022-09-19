@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="abc" />
+    <title>first web page</title>
+    <style>
+      img {
+        width: 106px;
+        border-radius: 7px;
+        float: left;
+        margin-right: 20px;
+        object-fit: cover;
+      }
+      body {
+        background: rgb(228, 255, 0);
+        background: radial-gradient(
+          circle,
+          rgba(228, 255, 0, 0.2805497198879552) 16%,
+          rgba(25, 255, 3, 0.3449754901960784) 90%
+        );
+      }
+
+      p.username {
+        font-weight: bold;
+        font-size: larger;
+        font-style: oblique;
+        position: relative;
+        left: -17px;
+        bottom: -87px;
+      }
+
+      a:hover {
+        font-weight: bolder;
+        color: deeppink;
+      }
+      .navigation_containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 132px;
+        /* box-sizing: content-box; */
+        /* border: darkblue; */
+
+        background-color: honeydew;
+      }
+
+      .Section_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 4px;
+      }
+
+      #my_content {
+        background-color: antiquewhite;
+        animation-name: my_content;
+        animation-duration: 10s;
+        width: 335px;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 5px;
+        border: double;
+        border: 1px solid;
+        box-shadow: 5px 10px;
+        /* position: relative;
+        top: 35px; */
+        /* position: fixed;
+        top: 162px; */
+      }
+
+      @keyframes my_content {
+        from {
+          background-color: antiquewhite;
+        }
+        to {
+          background-color: lightgreen;
+        }
+      }
+
+      #second_section {
+        width: 300px;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 5px;
+        border: double;
+        border: 1px solid;
+        /* position: relative;
+        top: -789px;
+        left: 1001px; */
+        /* position: fixed;
+        top: 161px;
+        left: 1017px; */
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(175, 253, 45, 0.804359243697479) 100%
+        );
+        box-shadow: 10px 10px 8px 10px #888888;
+      }
+
+      #third_section {
+        width: 640px;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 5px;
+        /* border: double; */
+        /* border: 1px solid; */
+        position: relative;
+        top: -25px;
+        /* position: fixed;
+        top: 136px;
+        left: 364px; */
+      }
+
+      .paragraph {
+        position: relative;
+        bottom: 16px;
+        max-height: fit-content;
+        display: inline-block;
+      }
+
+      .links {
+        background: #cce5ff;
+        color: darkblue;
+        margin: 5px;
+        line-height: 30px;
+      }
+      .link_class {
+        font-size: large;
+        font-family: cursive;
+      }
+
+      .course_list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+
+        background: linear-gradient(#80ffdb 100px, #5390d9 40%, #7400b8);
+        margin: -20px 0px;
+        padding: 26px 26px;
+      }
+
+      /* .course_list > courses {
+        margin-right: 20px;
+      } */
+      .courses {
+        background: rgb(195, 34, 113);
+        background: linear-gradient(
+          60deg,
+          rgba(195, 34, 113, 0.7651435574229692) 16%,
+          rgba(119, 139, 10, 0.8575805322128851) 78%
+        );
+        width: 400px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 100px / 50px;
+        line-height: 95px;
+        font-size: 30px;
+      }
+      .courses:hover {
+        background: lightgreen;
+      }
+      a.on_click_course {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-style: calc();
+        color: darkorange;
+      }
+      div.More_course {
+        width: 127px;
+        height: 39px;
+        /* border: 20px solid #969696; */
+        background: #d9dbda;
+        margin: 10px;
+        background: lightblue;
+        text-align: center;
+        position: relative;
+        right: -8px;
+        float: right;
+        top: -30px;
+      }
+    </style>
+    <link rel="stylesheet" href="CSS/Headerstylesheet.css" />
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <header
+        style="
+          font-size: -webkit-xxx-large;
+          font-weight: bolder;
+          position: absolute;
+          color: black;
+          top: 41px;
+          right: 399px;
+        "
+      >
+        WELCOME TO MY PAGE
+      </header>
+      <div class="navigation_containers">
+        <div class="headertab">
+          <a href="index.html">HOME PAGE</a>
+        </div>
+        <div class="headertab">
+          <a href="courses.html">ALL COURSES</a>
+        </div>
+        <div class="headertab">
+          <a href="instuctor.html">INSTRUCTORS</a>
+        </div>
+        <div class="headertab">
+          <a href="aboutme.html">ABOUT ME</a>
+        </div>
+        <div class="headertab">
+          <a href="blogs.html">BLOGS</a>
+        </div>
+      </div>
+    </header>
+    <div class="Section_content">
+      <section id="my_content">
+        <h1 style="text-align: center">ABOUT ME</h1>
+        <img src="image/demo.jpg" />
+        <!-- <a
+          href="image/demo.jpg"
+          download
+          style="position: absolute; bottom: 275px; left: 134px"
+          >image</a
+        > -->
+
+        <p class="username">@Debayan7</p>
+        <div class="paragraph">
+          <p style="font-size: larger">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis ea voluptate blanditiis harum beatae necessitatibus
+            quas impedit?Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Tenetur error eligendi eaque vero perferendis aliquid deserunt
+            officia odio? Officiis fuga maxime voluptatum porro perferendis
+            saepe vitae molestias eos nihil incidunt?vero perferendis aliquid
+            deserunt officia odio? Officiis fuga maxime voluptatum porro
+            perferendis saepe vitae molestias eos nihil incidunt?vero
+            perferendis aliquid deserunt officia odio? Officiis fuga maxime
+            voluptatum porro perferendis saepe vitae molestias eos nihil
+            incidunt?fuga maxime voluptatum porro perferendis saepe vitae
+            molestias eos nihil incidunt?vero perferendis aliquid deserunt
+            officia odio? Officiis fuga maxime voluptatum porro perferendis
+            saepe vitae molestias eos nihil incidunt?fuga maxime voluptatum
+            porro perferendis saepe vitae molestias eos nihil incidunt?vero
+            perferendis aliquid deserunt officia odio? Officiis fuga maxime
+            voluptatum porro perferendis saepe vitae molestias eos n
+            <a
+              class="on_click_course"
+              href="#"
+              style="color: #5390d9; font-weight: bolder; font-size: x-large"
+              >...</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="third_section" style="height: max-height">
+        <h1 class="font" style="text-align: center; background: #5390d9">
+          WELCOME TO MY PAGE. WE ARE OFFERING THESE COURSES FOR YOU
+        </h1>
+        <div class="course_list">
+          <div class="courses">
+            <a class="on_click_course" href="https://google.com">JAVA</a>
+          </div>
+          <div class="courses">
+            <a class="on_click_course" href="#">HTML AND CSS</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">PYTHON</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">JAVA SCRIPT</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">SQL</a>
+          </div>
+
+          <div class="courses">
+            <a class="on_click_course" href="#">MACHINE LEARNING</a>
+          </div>
+        </div>
+        <section class="More_course">
+          <div class="More_course">
+            <a class="on_click_course" href="#" style="color: black"
+              >view more courses ></a
+            >
+          </div>
+        </section>
+      </section>
+
+      <section id="second_section">
+        <h1
+          style="
+            font-size: larger;
+            text-align: center;
+            text-decoration: underline dotted;
+            color: rgb(196, 0, 26);
+          "
+        >
+          SOME IMPORTANT LINKS
+        </h1>
+
+        <ul class="links">
+          <li class="link_class">
+            <a href="basic1.html">click on the link to go to the next page </a>
+          </li>
+          <li class="link_class">
+            <a href="videoaudio.html">click to access the video and audios</a>
+          </li>
+          <li class="link_class">
+            <a href="https://www.hoichoi.com/" title="go to google">Hoichoi</a>
+          </li>
+          <li class="link_class">
+            <a href="https://www.cricbuzz.com/" title="go to cricbuzz"
+              >cricbuzz</a
+            >
+          </li>
+          <li class="link_class">
+            <a href="https://www.amazon.com/" title="amazon">amazon</a>
+          </li>
+          <li class="link_class">
+            <a href="https://www.netflix.com/" title="netflix">netflix</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
