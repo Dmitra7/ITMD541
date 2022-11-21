@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking BoxIcon for Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input
+            type="text"
+            spellcheck="false"
+            placeholder="Enter city name"
+            required
+          />
+          <div class="separator"></div>
+          <button>Get Device Location</button>
+        </div>
+      </section>
+      <section class="weather-part">
+        <img src="" alt="Weather Icon" />
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class="bx bx-cloud-rain"></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+              </div>
+              <!-- <p>Precipitation</p> -->
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class="bx bxs-droplet-half"></i>
+            <div class="details">
+              <span>_</span>
+              <!-- <p>Humidity</p> -->
+            </div>
+          </div>
+          <div class="column time">
+            <i class="bx bx-time"></i>
+            <div class="details">
+              <span>_</span>
+              <!-- <p>Time</p> -->
+            </div>
+          </div>
+          <div class="column wind">
+            <i class="bx bxl-tailwind-css"></i>
+            <div class="details">
+              <span>_</span>
+              <span class="deg">km/h</span>
+              <!-- <p>Wind</p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="weatherContainer">
+      <div id="iconsContainer">
+        <div class="icons">
+          <p class="weather" id="day1"></p>
+          <div class="image">
+            <!-- <img src="" class="imgClass" id="img1" /> -->
+            <img src="" alt="Weather Icon" id="img1" />
+          </div>
+          <div class="weather" id="comment1">_ _</div>
+          <p class="minValues" id="day1Min">
+            Min &nbsp&nbsp;
+            <span class="numb" id="mntemp1">_</span>
+            <span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day1Max">
+            Max &nbsp&nbsp
+
+            <span class="numb" id="mxtemp1">_</span>
+            <span class="deg">°</span>C
+          </p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day2"></p>
+          <div class="image">
+            <!-- <img src="dots.png" class="imgClass" id="img2" /> -->
+            <img src="" alt="Weather Icon" id="img2" />
+          </div>
+          <div class="weather" id="comment2">_ _</div>
+          <p class="minValues" id="day2Min">
+            Min &nbsp&nbsp
+            <span class="numb" id="mntemp2">_</span><span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day2Max">
+            Max &nbsp&nbsp<span class="numb" id="mxtemp2">_</span
+            ><span class="deg">°</span>C
+          </p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day3"></p>
+          <div class="image">
+            <!-- <img src="dots.png" class="imgClass" id="img3" /> -->
+            <img src="" alt="Weather Icon" id="img3" />
+          </div>
+          <div class="weather" id="comment3">_ _</div>
+          <p class="minValues" id="day3Min">
+            Min &nbsp&nbsp <span class="numb" id="mntemp3">_</span
+            ><span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day3Max">
+            Max &nbsp&nbsp<span class="numb" id="mxtemp3">_</span
+            ><span class="deg">°</span>C
+          </p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day4"></p>
+          <div class="image">
+            <!-- <img src="dots.png" class="imgClass" id="img4" /> -->
+            <img src="" alt="Weather Icon" id="img4" />
+          </div>
+          <div class="weather" id="comment4">_ _</div>
+          <p class="minValues" id="day4Min">
+            Min &nbsp&nbsp<span class="numb" id="mntemp4">_</span
+            ><span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day4Max">
+            Max &nbsp&nbsp <span class="numb" id="mxtemp4">_</span
+            ><span class="deg">°</span>C
+          </p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day5"></p>
+          <div class="image">
+            <!-- <img src="dots.png" class="imgClass" id="img5" /> -->
+            <img src="" alt="Weather Icon" id="img5" />
+          </div>
+          <div class="weather" id="comment5">_ _</div>
+          <p class="minValues" id="day5Min">
+            Min &nbsp&nbsp<span class="numb" id="mntemp5">_</span
+            ><span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day5Max">
+            Max &nbsp&nbsp<span class="numb" id="mxtemp5">_</span
+            ><span class="deg">°</span>C
+          </p>
+        </div>
+
+        <div class="icons">
+          <p class="weather" id="day6"></p>
+          <div class="image">
+            <!-- <img src="dots.png" class="imgClass" id="img5" /> -->
+            <img src="" alt="Weather Icon" id="img6" />
+          </div>
+          <div class="weather" id="comment6">_ _</div>
+          <p class="minValues" id="day6Min">
+            Min &nbsp&nbsp<span class="numb" id="mntemp6">_</span
+            ><span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day6Max">
+            Max &nbsp&nbsp<span class="numb" id="mxtemp6">_</span
+            ><span class="deg"> °</span>C
+          </p>
+        </div>
+
+        <div class="icons">
+          <p class="weather" id="day7"></p>
+          <div class="image">
+            <!-- <img src="dots.png" class="imgClass" id="img5" /> -->
+            <img src="" alt="Weather Icon" id="img7" />
+          </div>
+          <div class="weather" id="comment7">_ _</div>
+          <p class="minValues" id="day7Min">
+            Min &nbsp&nbsp<span class="numb" id="mntemp7">_</span
+            ><span class="deg">°</span>C
+          </p>
+          <p class="maxValues" id="day7Max">
+            Max &nbsp&nbsp <span class="numb" id="mxtemp7">_</span
+            ><span class="deg">°</span>C
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
